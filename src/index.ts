@@ -1,22 +1,14 @@
 /**
-2️⃣ Funciones tipadas
+3️⃣ Tipos union
 
-Crea funciones para:
+Crea una función que reciba un parámetro:
 
-* Sumar dos números
-* Retornar un saludo con un nombre
-* Retornar void (ej. imprimir en consola)
-
-Restricción: ninguna función debe usar any.
+* string | number
+* Si es string, devuelve su longitud
+* Si es number, devuelve el doble
  */
 
-const sumaNumeros: (a: number, b: number) => number = (a, b) => a + b
-console.log(sumaNumeros(20, 37))
+const funnyFunction = (param1: string | number) => typeof param1 == "string" ? param1.length : param1 * 2
 
-const saludo = (nombre: string): string => `Hola ${nombre}!`
-console.log(saludo("Amanda"))
-
-function impresion(): void {
-  console.log("Esta función no retorna nada")
-}
-impresion()
+console.log(funnyFunction("Juan")) // Devuelve 4
+console.log(funnyFunction(18)) // Devuelve 36

@@ -1,9 +1,7 @@
-2️⃣ Funciones tipadas
+3️⃣ Tipos union
 
-Crea funciones para:
+Crea una función que reciba un parámetro:
 
-* Sumar dos números
-* Retornar un saludo con un nombre
-* Retornar void (ej. imprimir en consola)
-
-Restricción: ninguna función debe usar any.
+* string | number
+* Si es string, devuelve su longitud
+* Si es number, devuelve el doble
