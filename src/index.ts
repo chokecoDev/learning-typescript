@@ -1,27 +1,22 @@
 /**
- *  1️⃣ Tipos primitivos
- * 
- * Crea variables tipadas explícitamente para:
- * string
- * number
- * boolean
- * array de números
- * tupla con [string, number]
- * 
- * Extra: intenta reasignar un tipo incorrecto y observa el error del compilador.
+2️⃣ Funciones tipadas
+
+Crea funciones para:
+
+* Sumar dos números
+* Retornar un saludo con un nombre
+* Retornar void (ej. imprimir en consola)
+
+Restricción: ninguna función debe usar any.
  */
 
-let nombre: string
-nombre = "Ana"
-console.log(nombre)
+const sumaNumeros: (a: number, b: number) => number = (a, b) => a + b
+console.log(sumaNumeros(20, 37))
 
-let edad: number
-let esMayor: boolean
-let celulares: number[]
-let trabajo_experiencia: [string, number]
+const saludo = (nombre: string): string => `Hola ${nombre}!`
+console.log(saludo("Amanda"))
 
-/**
- * Dará error
- * edad = "Veinte"
- * Type 'string' is not assignable to type 'number'.
-*/
+function impresion(): void {
+  console.log("Esta función no retorna nada")
+}
+impresion()

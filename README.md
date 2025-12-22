@@ -1,11 +1,9 @@
-1️⃣ Tipos primitivos
- 
-Crea variables tipadas explícitamente para:
+2️⃣ Funciones tipadas
 
- * string
- * number
- * boolean
- * array de números
- * tupla con [string, number]
+Crea funciones para:
 
-Extra: intenta reasignar un tipo incorrecto y observa el error del compilador.
+* Sumar dos números
+* Retornar un saludo con un nombre
+* Retornar void (ej. imprimir en consola)
+
+Restricción: ninguna función debe usar any.
