@@ -1,7 +1,12 @@
-3️⃣ Tipos union
+4️⃣ Type vs Interface
 
-Crea una función que reciba un parámetro:
+Modela una entidad User con:
 
-* string | number
-* Si es string, devuelve su longitud
-* Si es number, devuelve el doble
+* id
+* name
+* email
+* isActive (opcional)
+
+Crea:
+* una versión con type
+* otra con interface

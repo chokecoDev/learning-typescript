@@ -1,14 +1,28 @@
 /**
-3️⃣ Tipos union
+4️⃣ Type vs Interface
 
-Crea una función que reciba un parámetro:
+Modela una entidad User con:
 
-* string | number
-* Si es string, devuelve su longitud
-* Si es number, devuelve el doble
- */
+* id
+* name
+* email
+* isActive (opcional)
 
-const funnyFunction = (param1: string | number) => typeof param1 == "string" ? param1.length : param1 * 2
+Crea:
+* una versión con type
+* otra con interface
+*/
 
-console.log(funnyFunction("Juan")) // Devuelve 4
-console.log(funnyFunction(18)) // Devuelve 36
+type userVersionType = {
+  id: number,
+  name: string,
+  email: string,
+  isActive?: boolean
+}
+
+interface userInterface {
+  id: number,
+  name: string,
+  email: string,
+  isActive?: boolean
+}
