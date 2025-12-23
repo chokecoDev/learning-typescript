@@ -1,12 +1,8 @@
-4️⃣ Type vs Interface
+5️⃣ Arrays de objetos
 
-Modela una entidad User con:
+Crea un array de usuarios tipados.
 
-* id
-* name
-* email
-* isActive (opcional)
-
-Crea:
-* una versión con type
-* otra con interface
+Implementa funciones para:
+* Obtener solo usuarios activos
+* Buscar usuario por id
+* Contar usuarios
