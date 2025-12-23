@@ -13,14 +13,14 @@ Crea:
 * otra con interface
 */
 
-type userVersionType = {
+type UserType = {
   id: number,
   name: string,
   email: string,
   isActive?: boolean
 }
 
-interface userInterface {
+interface UserInterface {
   id: number,
   name: string,
   email: string,
