@@ -1,8 +1,7 @@
-5️⃣ Arrays de objetos
+6️⃣ Enums y literal types
 
-Crea un array de usuarios tipados.
+Modela:
+* un enum para roles (ADMIN, USER, GUEST)
+* un literal type para estados ("pending" | "approved" | "rejected")
 
-Implementa funciones para:
-* Obtener solo usuarios activos
-* Buscar usuario por id
-* Contar usuarios
+Crea una función que valide combinaciones válidas.
